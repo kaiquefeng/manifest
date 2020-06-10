@@ -152,6 +152,7 @@ aside {
     margin-left: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     h1 {
       font-family: Roboto;
@@ -167,6 +168,7 @@ aside {
       font-size: 18px;
       line-height: 30px;
     }
+    
 
     form {
       display: flex;
@@ -221,6 +223,10 @@ aside {
     .contato-container {
       flex-direction: column;
       width: 100%;
+
+      img {
+        width: 100%;
+      }
     }
   }
 

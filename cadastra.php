@@ -8,7 +8,7 @@ $password = "root";
 $conn = mysqli_connect($servername, $username, $password, $database);
 // checando conexão
 if (!$conn) {
-      die("Connection failed: " . mysqli_connect_error());
+      die("Falha na conexão: " . "  " .  mysqli_connect_error());
 }
  
 
@@ -18,9 +18,11 @@ if (!$conn) {
  $tel = $_POST ["telefone"]; 
  $cidade = $_POST ["cidade"];
  $estado = $_POST ["estado"];
+ $horario = $_POST ["horario"];
 
 
- $sql = "INSERT INTO `users` (`nome`, `email`, `telefone`, `cidade`, `estado`, `horario`) VALUES ('$nome', '$email', '$tel', '$cidade', '$estado', 'manha');";
+
+ $sql = "INSERT INTO `users` (`nome`, `email`, `telefone`, `cidade`, `estado`, `horario`) VALUES ('$nome', '$email', '$tel', '$cidade', '$estado', '$horario');";
 if (mysqli_query($conn, $sql)) {
       ?>
               <script>
