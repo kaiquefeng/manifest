@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/scss/style.css">
+  <link rel="shortcut icon" href="assets/images/icon.svg">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Manifest</title>
+</head>
+<body>
+  <header id="topo">
+    <img src="assets/images/logo.svg" alt="">
+    <div class="navmenu">
+      <ul>
+        <li><a href="#topo">Home</a></li>
+        <li><a href="#slider">Slider</a></li>
+        <li><a href="#pessoas">Participação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <div class="home-container" >
+      <div class="title-home">
+        <h1>Sua iniciativa <br>
+          importa</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris sed dolor ullamcorper egestas at aliquam quam. Nulla facilisi. Donec id lectus nec mauris sollicitudin mattis et vel ante. Mauris sit amet purus et diam faucibus placerat id ultricies leo. Suspendisse odio nulla.</p>
+      </div>
+      <img src="assets/images/mao.svg" alt="">
+    </div>
+  </main>
+  <div id="slider">
+    <div class=" slider-container">
+      <img class="slider-img" src="assets/images/banners/banner1.svg" style="width:100%">
+      <img class="slider-img" src="assets/images/banners/banner2.svg" style="width:100%">
+    
+      <div class="next-prev">
+        <button class="button-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <section id="pessoas">
+    <div class="vaso-container" >
+      <img src="assets/images/vaso.svg" alt="">
+      <div class="title-home">
+        <h1>Várias pessoas <br>
+        participando</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac mauris sed dolor ullamcorper egestas at aliquam quam. Nulla facilisi. Donec id lectus nec mauris sollicitudin mattis et vel ante. Mauris sit amet purus et diam faucibus placerat id ultricies leo. Suspendisse odio nulla.</p>
+      </div>
+      
+    </div>
+  </section>
+
+  <aside id="contato" class="contato">
+    <div class="contato-container" >
+      
+      <div class="title-home">
+        <h1>Seja um membro </h1>
+        <form name="formulario" action="cadastra.php" method="POST">
+          <input type="text" name="nome" placeholder="Seu nome">
+          <input type="email" name="email" placeholder="Seu E-mail">
+          <input type="tel" name="telefone" placeholder="Seu Telefone">
+          <input type="text" name="cidade" placeholder="Cidade">
+          <input type="text" name="estado" placeholder="Estado">
+
+          <label for="Horário para contato">Horário para contato</label>
+
+          <div class="opcoes">
+            <input type="radio" id="manha" name="drone" value="manha">
+            <label for="manha">Manhã</label>
+            <input type="radio" id="tarde" name="drone" value="tarde">
+            <label for="tarde">Tarde</label>
+            <input type="radio" id="noite" name="drone" value="noite">
+            <label for="noite">Noite</label>
+          </div>
+
+          <button onclick="return validaCampos()" type="submit" >Enviar</button>
+        </form>
+      </div>
+      <img src="assets/images/recycle.svg" alt="">
+      
+    </div>
+  </aside>
+
+  <script src="assets/js/main.js"></script>
+  
+</body>
+</html>
