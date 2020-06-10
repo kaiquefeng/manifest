@@ -4,14 +4,12 @@ $servername = "localhost";
 $database = "manifest";
 $username = "root";
 $password = "root";
-// Create connection
+
 $conn = mysqli_connect($servername, $username, $password, $database);
-// Check connection
+// checando conexão
 if (!$conn) {
       die("Connection failed: " . mysqli_connect_error());
 }
- 
-echo "Connected successfully"; 
  
 
  // Inserindo dados
@@ -25,9 +23,8 @@ echo "Connected successfully";
  $sql = "INSERT INTO `users` (`nome`, `email`, `telefone`, `cidade`, `estado`, `horario`) VALUES ('$nome', '$email', '$tel', '$cidade', '$estado', 'manha');";
 if (mysqli_query($conn, $sql)) {
       ?>
-      <script>
+              <script>
                   alert("Dados enviados com sucesso");
-                  window.location = "/";
               </script>
       <?php
 } else {
